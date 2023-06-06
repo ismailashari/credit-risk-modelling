@@ -41,3 +41,8 @@ In this project we use target from a column in the dataset which is `loan_status
 - Hyperparameter tuning
 
 ## Conclusion and Suggestion
+- After doing hyperparameter tuning, we have better score for positive values. It means that we predicted better on the dataset. In the end we can predict with **94,2% accuracy** on the good loan or good borrowers.
+- For the suggestion to get better score again, and to reduce the predicted bad loan that are actually good loan, we need to:
+- **Data preprocessing.** Pay more attention to the data preprocessing, including how to fill the missing values, consider to take the outliers or not, etc.
+- **Feature Selection.** This is important, because our model data is from selected features. Consider to make decision whether the feature is importance or not. Do more exploration on the data, and pay attention on the detail values. We can try to use Weight of Evidence (WoE) and Information Value (IV), to get more detail of the data.
+- **Modeling.** Try more model algorithm, try more hyperparameter tuning, consider the scoring, etc.
